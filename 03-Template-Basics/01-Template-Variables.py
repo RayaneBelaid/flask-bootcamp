@@ -16,7 +16,7 @@ def puppy_name(name):
 
 @app.route('/advpuppy/<name>')
 def adv_puppy_name(name):
-    letters = list(name)
+    letters = list(name) # will show letters of the name passed [,,,]
     pup_dict = {'pup_name':name}
     return render_template('01-Template-Variables.html',
                            name=name,mylist=letters,mydict=pup_dict)
